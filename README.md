@@ -1,2 +1,0 @@
-# Seminar2
-Tasks
