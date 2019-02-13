@@ -1,17 +1,18 @@
-from mybox import MyBox
-class MyBoxIterator():
-    def __init__(self,L):
-        self.L=L
-        self.idx=0
+class MyBoxIterator:
+  def __iter__(self):
+    self.a = 1
+    return self
 
-    def __iter__(self):
-        return self
-    def __next__(self):
-        if self.idx<len(self.L):
-            color=self.L[self.idx]
-            self.idx+=1
-            return color
-        else:
-            raise StopIteration
-   
-print(MyBoxIterator.L)
+  def __next__(self):
+    if self.a <= 10:
+      x = self.a
+      self.a *= 2
+      return x
+    else:
+      raise StopIteration
+
+myclass = MyBoxIterator()
+myiter = iter(myclass)
+
+for x in myiter:
+  print(x)
