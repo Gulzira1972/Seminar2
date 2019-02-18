@@ -8,7 +8,7 @@ class MyBox(Tortbyrish):
           return len(self.Tortbyrish)
           
        def add(self,b):
-           self.Tortbyrish.appened(b)
+           self.Tortbyrish.append(b)
            
        def remove(self, width):
             assert width in self._tort
