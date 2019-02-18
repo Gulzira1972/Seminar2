@@ -1,7 +1,7 @@
 from myclass import Tortbyrish
 
 class MyBox(Tortbyrish):
-       def __init__(self,):
+       def __init__(self):
            self._tort=list()
            
        def __len__(self):
